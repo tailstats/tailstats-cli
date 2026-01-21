@@ -1,16 +1,16 @@
 # TailStats CLI
 
-Push data to your [TailStats](https://app.tailstats.com) dashboard from the command line.
+Push data to your [TailStats](https://tailstats.com) app from the command line. Available on macOS, iOS, Android, and Windows (coming soon).
 
 ## Download
 
 | Platform | Download |
 |----------|----------|
-| macOS (Apple Silicon) | [tailstats-darwin-arm64](https://github.com/tailstats/tailstats-cli-releases/releases/latest/download/tailstats-darwin-arm64) |
-| macOS (Intel) | [tailstats-darwin-amd64](https://github.com/tailstats/tailstats-cli-releases/releases/latest/download/tailstats-darwin-amd64) |
-| Linux (x86_64) | [tailstats-linux-amd64](https://github.com/tailstats/tailstats-cli-releases/releases/latest/download/tailstats-linux-amd64) |
-| Linux (ARM64) | [tailstats-linux-arm64](https://github.com/tailstats/tailstats-cli-releases/releases/latest/download/tailstats-linux-arm64) |
-| Windows | [tailstats-windows-amd64.exe](https://github.com/tailstats/tailstats-cli-releases/releases/latest/download/tailstats-windows-amd64.exe) |
+| macOS (Apple Silicon) | [tailstats-darwin-arm64](https://raw.githubusercontent.com/tailstats/tailstats-cli/main/tailstats-darwin-arm64) |
+| macOS (Intel) | [tailstats-darwin-amd64](https://raw.githubusercontent.com/tailstats/tailstats-cli/main/tailstats-darwin-amd64) |
+| Linux (x86_64) | [tailstats-linux-amd64](https://raw.githubusercontent.com/tailstats/tailstats-cli/main/tailstats-linux-amd64) |
+| Linux (ARM64) | [tailstats-linux-arm64](https://raw.githubusercontent.com/tailstats/tailstats-cli/main/tailstats-linux-arm64) |
+| Windows | [tailstats-windows-amd64](https://raw.githubusercontent.com/tailstats/tailstats-cli/main/tailstats-windows-amd64) |
 
 ## Installation
 
@@ -18,13 +18,13 @@ Push data to your [TailStats](https://app.tailstats.com) dashboard from the comm
 
 ```bash
 # Download (example for Apple Silicon Mac)
-curl -LO https://github.com/tailstats/tailstats-cli-releases/releases/latest/download/tailstats-darwin-arm64
+curl -L -o tailstats https://raw.githubusercontent.com/tailstats/tailstats-cli/main/tailstats-darwin-arm64
 
 # Make executable
-chmod +x tailstats-darwin-arm64
+chmod +x tailstats
 
 # Move to PATH
-sudo mv tailstats-darwin-arm64 /usr/local/bin/tailstats
+sudo mv tailstats /usr/local/bin/tailstats
 
 # Verify
 tailstats --version
