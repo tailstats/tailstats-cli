@@ -2,7 +2,13 @@
 
 Push data to your [TailStats](https://tailstats.com) app from the command line. Available on macOS, iOS, Android, and Windows (coming soon).
 
-## Download
+## Quick Install (macOS / Linux)
+
+```bash
+curl -fsSL https://tailstats.com/install | sh
+```
+
+## Manual Download
 
 | Platform | Download |
 |----------|----------|
